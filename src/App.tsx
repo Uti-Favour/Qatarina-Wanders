@@ -1,15 +1,17 @@
 import React from "react";
 import Hero from "./components/Hero";
-import { library, Library } from "@fortawesome/fontawesome-svg-core";
+import AnimageSeries from "./components/AnimageSeries";
+import { library} from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fas);
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-black">
       <>
         <Hero />
+        <AnimageSeries/>
       </>
     </div>
   );
