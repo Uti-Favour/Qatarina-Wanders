@@ -1,13 +1,18 @@
-import React from 'react'
+import React from "react";
+import Hero from "./components/Hero";
+import { library, Library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fas);
 
 const App = () => {
   return (
     <div>
       <>
-    <h1>Hello World</h1>
+        <Hero />
       </>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
