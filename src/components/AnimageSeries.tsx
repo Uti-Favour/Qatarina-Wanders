@@ -1,26 +1,47 @@
-import React, { FC } from 'react'
-import animage_booklist from '../constants/booklist'
+import React, { FC, useRef, useEffect } from 'react';
+import { motion, useTransform, useScroll, useAnimationFrame } from 'framer-motion';
+import "../css/styles.css"
+import animage_booklist from '../constants/booklist';
 
-const AnimageSeries:FC = () => {
+const AnimageSeries: FC = () => {
   return (
-    <>
-      <section className='bg-black text-white'>
-        <div className='mt-28'>
-            <h1 className='text-6xl flex justify-center'>Animage Academy Series</h1>
-        </div>
-       <div className='lg:mx-10 mx-5 grid lg:grid-cols-4 gap-4 mt-16'>
-       {animage_booklist.map((books) => (
-            <div className='border border-gray-500 px-5 py-10 rounded-xl'>
-                <img src={books.imagelink} alt="image" />
-                <h2 className='text-3xl'>{books.name}</h2>
-                <p className='mb-8 text-gray-400 mt-3'>{books.description}</p>
-               <a href={books.amazonlink} className='mt-16'><button className='px-10 py-3 bg-white text-black rounded-lg'>Read Now</button></a>
-            </div>
-        ))}
-       </div>
-      </section>
-    </>
-  )
-}
+    <HorizontalScrollCarousel />
+  );
+};
 
-export default AnimageSeries
+const HorizontalScrollCarousel = () => {
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-57%"]);
+
+  // Create an infinite scroll effect
+ 
+
+  return (
+    <section ref={targetRef} className="relative lg:h-[300vh] mt-[600px] lg:mt-0 bg-black text-white" id='books'>
+      <div className="mt-28">
+        <h1 className='text-7xl flex justify-center great-vibes-regular'>View Quatarina's Work</h1>
+      </div>
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <motion.div style={{ x }} className="flex gap-4 lg:mx-10 mx-5">
+          {animage_booklist.map((books, index) => (
+            <div key={index} className='item-center shadow-2xl flex-none w-80 relative group'>
+              <img src={books.imagelink} alt="image" className="w-full h-auto" />
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-opacity duration-300 flex items-center justify-center">
+                <div className="text-center">
+                  <p className="text-white mb-4">{books.description}</p>
+                 <a href={books.amazonlink}> <button className="px-8 py-3 bg-white text-black font-semibold rounded-xl ">Read More</button></a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default AnimageSeries;
