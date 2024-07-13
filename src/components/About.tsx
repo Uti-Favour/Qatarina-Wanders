@@ -1,4 +1,4 @@
-import React from "react";
+
 import quatarina from "/src/assets/images/Quatarina-Headshot-4.jpg";
 const About = () => {
   return (

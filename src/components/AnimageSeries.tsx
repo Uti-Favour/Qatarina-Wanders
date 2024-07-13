@@ -1,5 +1,5 @@
-import React, { FC, useRef, useEffect } from 'react';
-import { motion, useTransform, useScroll, useAnimationFrame } from 'framer-motion';
+import  { FC, useRef } from 'react';
+import { motion, useTransform, useScroll} from 'framer-motion';
 import "../css/styles.css"
 import animage_booklist from '../constants/booklist';
 
