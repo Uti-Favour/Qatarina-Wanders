@@ -6,7 +6,7 @@ import "../css/styles.css"
 
 const Hero: FC = () => {
   return (
-    <section className="relative h-screen bg-black text-white">
+    <section className="relative h-screen bg-black text-white py-36 lg:py-0">
       {/* Video Background */}
       <video
         autoPlay
@@ -19,12 +19,12 @@ const Hero: FC = () => {
       </video>
 
       {/* Overlay to darken the video */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-80"></div>
 
       {/* Content */}
       <div className="relative z-10 lg:flex h-full w-full lg:justify-between">
         {/* Page Left */}
-        <div className="max-w-2xl space-y-8  ml-8 lg:mt-28 ">
+        <div className="max-w-2xl space-y-8  ml-5 lg:mt-28 ">
           <h1 className="max-w-xl lg:text-7xl text-6xl  font-medium">
             Books that shift your perspective.
           </h1>
@@ -36,13 +36,13 @@ const Hero: FC = () => {
           </p>
 
           {/* Buttons */}
-          <div className="lg:space-x-6 space-y-4 lg:space-y-0">
+          <div className="lg:space-x-6  lg:space-y-0 flex lg:flex-none space-x-2 items-center">
             <a href="#about">
-              <button className="lg:px-10 px-20 py-3 rounded-3xl bg-white text-black font-semibold">
+              <button className="lg:px-10 px-5 py-3 rounded-3xl bg-white text-black font-semibold">
                 Meet Quatarina
               </button>
             </a>
-           <a href="#books"> <button className="lg:px-10 px-20 py-3 rounded-3xl bg-white text-black font-semibold">
+           <a href="#books"> <button className="lg:px-10 px-5 py-3 rounded-3xl bg-white text-black font-semibold">
               See My Books <FontAwesomeIcon icon={faBook} />
             </button></a>
           </div>

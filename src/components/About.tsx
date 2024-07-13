@@ -1,7 +1,5 @@
 import React from "react";
 import quatarina from "/src/assets/images/Quatarina-Headshot-4.jpg";
-import { faGlasses } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const About = () => {
   return (
     <>
@@ -12,6 +10,13 @@ const About = () => {
           </h1>
         </div>
         <div className="lg:flex justify-between lg:mx-10 mx-5 lg:mt-14">
+        <div className="max-w-2xl lg:mt-0 mt-10">
+            <img
+              src={quatarina}
+              alt="quatarina"
+              className="lg:rounded-tl-[80px] rounded-tl-[50px] lg:h-[800px] lg:w-[1000px] object-cover "
+            />
+          </div>
           <div>
             <div className="space-y-6 max-w-xl mt-10">
               <p>
@@ -56,19 +61,13 @@ const About = () => {
             <div className="mt-10">
               <a href="https://www.amazon.com/stores/Qatarina-Wanders/author/B07YGRBFFL?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true">
                 <button className="py-3 px-10 bg-white text-black text-lg font-semibold rounded-xl ">
-                  Start Reading Now <FontAwesomeIcon icon={faGlasses}/>
+                  Start Reading Now
                 </button>
               </a>
             </div>
           </div>
 
-          <div className="max-w-2xl lg:mt-0 mt-10">
-            <img
-              src={quatarina}
-              alt="quatarina"
-              className="lg:rounded-tl-[80px] lg:h-[800px] lg:w-[1000px] object-cover "
-            />
-          </div>
+          
         </div>
       </section>
     </>

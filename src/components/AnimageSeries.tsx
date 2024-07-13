@@ -17,15 +17,15 @@ const HorizontalScrollCarousel = () => {
 
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-57%"]);
 
-  // Create an infinite scroll effect
+
  
 
   return (
-    <section ref={targetRef} className="relative lg:h-[300vh] mt-[600px] lg:mt-0 bg-black text-white" id='books'>
+    <section ref={targetRef} className="relative lg:h-[300vh]   lg:mt-0 bg-black  text-white" id='books'>
       <div className="mt-28">
         <h1 className='text-7xl flex justify-center great-vibes-regular'>View Quatarina's Work</h1>
       </div>
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+      <div className="sticky top-0 flex lg:h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4 lg:mx-10 mx-5">
           {animage_booklist.map((books, index) => (
             <div key={index} className='item-center shadow-2xl flex-none w-80 relative group'>
