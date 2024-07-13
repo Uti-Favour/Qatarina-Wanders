@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import  { FC } from "react";
 import testimony from "../constants/testimony";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons/faStar";

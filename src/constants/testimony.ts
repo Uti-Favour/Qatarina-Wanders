@@ -1,4 +1,4 @@
-import headshot from "/src/assets/images/Quatarina-Headshot-9.jpg"
+
 const testimony = [
     {
         image : 'https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/12a0efd7-695f-4bdd-9f29-d2140095415f._CR0,0,390,390_SX48_.jpg',
