@@ -2,9 +2,11 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AnimageSeries from "./components/AnimageSeries";
+import AllShifter from "./components/AllShifter";
 import About from "./components/About";
 import Testimonial from "./components/Testimonial";
 import PenName from "./components/PenName";
+
 import { library} from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,6 +20,7 @@ const App = () => {
         <Navbar/>
         <Hero />
         <AnimageSeries/>
+        <AllShifter/>
         <About/>
         <Testimonial/>
         <PenName/>

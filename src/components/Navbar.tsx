@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-20">
       <div className="container mx-auto flex items-center justify-between py-4 px-8">
         <div className="flex items-center space-x-4">
-         <h1 className='great-vibes-regular text-2xl'>QW</h1>
+         <h1 className='great-vibes-regular text-4xl'>QW</h1>
         </div>
         <ul className="hidden md:flex space-x-8 text-black text-lg font-medium">
           <li><a href="#" className="hover:text-gray-700">Home</a></li>
