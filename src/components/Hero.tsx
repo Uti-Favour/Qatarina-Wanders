@@ -20,7 +20,7 @@ const Hero: FC = () => {
       </video>
 
       {/* Overlay to darken the video */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-60"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-50"></div>
 
       {/* Content */}
       <div className="relative z-10 lg:flex h-full w-full lg:justify-between">

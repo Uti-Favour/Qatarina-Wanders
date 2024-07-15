@@ -47,14 +47,14 @@ const Series: React.FC = () => {
   }, []); // Empty dependency array ensures useEffect runs once
 
   return (
-    <section className=" text-white py-10">
-      {/* <div className="mt-28">
-        <h1 className="text-8xl flex justify-center great-vibes-regular">
-          Animage Academy Series
+    <section className=" text-white py-5">
+      <div className="mt-16">
+        <h1 className="lg:text-6xl text-4xl lg:mx-[200px]  text-center flex justify-center old-standard-tt-regular">
+        Explore My Collections of Different Genres
         </h1>
-      </div> */}
+      </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-10">
         {/* Infinite Scroll Section */}
         <div className="scroller" data-speed="slow">
           <ul className="scroller__inner flex justify-center">
