@@ -26,8 +26,8 @@ const Hero: FC = () => {
       <div className="relative z-10 lg:flex h-full w-full lg:justify-between">
         {/* Page Left */}
         <div className="max-w-2xl space-y-8  lg:ml-10 ml-5 lg:mt-32 ">
-          <h1 className="max-w-xl lg:text-8xl text-6xl  font-medium great-vibes-regular">
-            Books that will blow your mind
+          <h1 className="max-w-xl lg:text-7xl text-5xl  font-medium  old-standard-tt-regular">
+            Books That Will Blow Your Mind 
           </h1>
           <p className="max-w-lg">
             Qatarina Wanders is a former circus performer turned author and

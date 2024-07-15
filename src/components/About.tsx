@@ -3,9 +3,9 @@ import quatarina from "/src/assets/images/Quatarina-Headshot-4.jpg";
 const About = () => {
   return (
     <>
-      <section className="text-white  mt-10" id="about">
+      <section className="text-white  mt-16" id="about">
         <div className="flex justify-center text-center">
-          <h1 className="font-semibold lg:text-8xl text-6xl great-vibes-regular">
+          <h1 className="font-semibold lg:text-7xl text-6xl old-standard-tt-regular">
             About Quatarina Wanders
           </h1>
         </div>
