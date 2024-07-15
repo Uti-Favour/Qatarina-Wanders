@@ -2,11 +2,12 @@ import { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons/faBook";
 import quatarina_headshot from "/src/assets/images/Quatarina-Headshot-2.jpg";
+import nbclogo from "/src/assets/images/NBC_Peacock_1986.svg"
 import "../css/styles.css"
 
 const Hero: FC = () => {
   return (
-    <section className="relative h-screen bg-black text-white py-36 lg:py-0">
+    <section className="relative lg:h-screen bg-black text-white py-52 lg:py-0">
       {/* Video Background */}
       <video
         autoPlay
@@ -19,14 +20,14 @@ const Hero: FC = () => {
       </video>
 
       {/* Overlay to darken the video */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-80"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-70"></div>
 
       {/* Content */}
       <div className="relative z-10 lg:flex h-full w-full lg:justify-between">
         {/* Page Left */}
-        <div className="max-w-2xl space-y-8  ml-5 lg:mt-28 ">
-          <h1 className="max-w-xl lg:text-7xl text-6xl  font-medium">
-            Books that shift your perspective.
+        <div className="max-w-2xl space-y-8  lg:ml-10 ml-5 lg:mt-32 ">
+          <h1 className="max-w-xl lg:text-8xl text-6xl  font-medium great-vibes-regular">
+            Books that will blow your mind
           </h1>
           <p className="max-w-lg">
             Qatarina Wanders is a former circus performer turned author and
@@ -56,7 +57,7 @@ const Hero: FC = () => {
                 className="object-contain w-28"
               />
               <img
-                src="src/assets/images/NBC_Peacock_1986.svg"
+                src={nbclogo}
                 alt="nbc-logo"
                 className="w-14"
               />
@@ -75,7 +76,7 @@ const Hero: FC = () => {
           <img
             src={quatarina_headshot}
             alt="Headshot"
-            className="h-screen object-cover rounded-bl-[80px] grayscale"
+            className="h-screen object-cover rounded-bl-[80px] "
           />
         </div>
       </div>
