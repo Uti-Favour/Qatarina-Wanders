@@ -7,7 +7,7 @@ import "../css/styles.css"
 
 const Hero: FC = () => {
   return (
-    <section className="relative lg:h-screen bg-black text-white py-52 lg:py-0">
+    <section className="relative lg:h-screen bg-black text-white pt-48 lg:py-0">
       {/* Video Background */}
       <video
         autoPlay
@@ -20,7 +20,7 @@ const Hero: FC = () => {
       </video>
 
       {/* Overlay to darken the video */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-70"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-60"></div>
 
       {/* Content */}
       <div className="relative z-10 lg:flex h-full w-full lg:justify-between">
