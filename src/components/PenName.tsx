@@ -6,7 +6,7 @@ const PenName: FC = () => {
       <section className="text-black  py-14  bg-white">
         <div>
           <div>
-            <h1 className="lg:text-7xl text-7xl great-vibes-regular flex justify-center mx-5 text-center lg:text-left">
+            <h1 className="lg:text-7xl text-6xl old-standard-tt-regular flex justify-center mx-5 text-center lg:text-left">
               Qatarina's Pen Names
             </h1>
             <p className="flex justify-center mt-3 mx-8 lg:mx-0">

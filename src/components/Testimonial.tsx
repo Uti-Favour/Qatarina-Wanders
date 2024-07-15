@@ -7,9 +7,9 @@ import '../css/styles.css'
 const Testimonial: FC = () => {
   return (
     <>
-      <section className="mt-16 parallax bg-[url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0687daa4-87a2-44ff-bcb3-a87d32d90c17/detrhy4-5ec106e6-ea08-46b0-8fc8-ac7bc96309fc.jpg/v1/fill/w_1212,h_659,q_70,strp/mystery_monument_by_krannart_detrhy4-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA0NCIsInBhdGgiOiJcL2ZcLzA2ODdkYWE0LTg3YTItNDRmZi1iY2IzLWE4N2QzMmQ5MGMxN1wvZGV0cmh5NC01ZWMxMDZlNi1lYTA4LTQ2YjAtOGZjOC1hYzdiYzk2MzA5ZmMuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.4KaRk7sOE1OVSRxutgnBb8UMLDZwRfLSPpBpC6VeRNQ')] py-14 bg-no-repeat bg-cover">
+      <section className=" parallax bg-[url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0687daa4-87a2-44ff-bcb3-a87d32d90c17/detrhy4-5ec106e6-ea08-46b0-8fc8-ac7bc96309fc.jpg/v1/fill/w_1212,h_659,q_70,strp/mystery_monument_by_krannart_detrhy4-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA0NCIsInBhdGgiOiJcL2ZcLzA2ODdkYWE0LTg3YTItNDRmZi1iY2IzLWE4N2QzMmQ5MGMxN1wvZGV0cmh5NC01ZWMxMDZlNi1lYTA4LTQ2YjAtOGZjOC1hYzdiYzk2MzA5ZmMuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.4KaRk7sOE1OVSRxutgnBb8UMLDZwRfLSPpBpC6VeRNQ')] py-14 bg-no-repeat bg-cover">
         <div>
-            <h1 className="lg:text-7xl text-7xl flex justify-center text-white  old-standard-tt-regular">Testimonials</h1>
+            <h1 className="lg:text-7xl text-5xl flex justify-center text-white  old-standard-tt-bold">Testimonials</h1>
         </div>
         <div className="text-white lg:flex justify-between lg:mx-10 mx-5 mt-10">
           <div className="space-y-8 max-w-lg">
