@@ -1,5 +1,6 @@
 
 import Navbar from "./components/Navbar";
+import SliderHero from "./components/SliderHero";
 import Hero from "./components/Hero";
 import AnimageSeries from "./components/AnimageSeries";
 import AllShifter from "./components/AllShifter";
@@ -19,6 +20,7 @@ const App = () => {
     <div className="bg-black">
       <>
         <Navbar/>
+        <SliderHero/>
         <Hero />
         <AnimageSeries/>
         <AllShifter/>
