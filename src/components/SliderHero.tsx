@@ -36,7 +36,7 @@ const imgs = [
     subtitle: "A Journey to Remember",
     button: "Explore",
   },
-];/}
+];*/}
 
 const ONE_SECOND = 1000;
 const AUTO_DELAY = ONE_SECOND * 10;
