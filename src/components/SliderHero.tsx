@@ -17,27 +17,6 @@ const imgs = [
   "https://images.unsplash.com/photo-1442029739115-ce733f0de45e?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 ];
 
-{*/ const contents = [
-  {
-    image : image1,
-    title : "Quatarina Wanders",
-    subtitle: "New York Times Bestselling Author",
-    button: "Learn More",
-  },
-  {
-    image : image2,
-    title: "Mystical Forest",
-    subtitle: "An Enchanting Tale",
-    button: "Discover",
-  },
-  {
-    image : image3,
-    title: "Majestic Mountains",
-    subtitle: "A Journey to Remember",
-    button: "Explore",
-  },
-]; */}
-
 const ONE_SECOND = 1000;
 const AUTO_DELAY = ONE_SECOND * 10;
 const DRAG_BUFFER = 50;
