@@ -5,9 +5,6 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import image1 from "/src/assets/images/Quatarina-Headshot-3.jpg"
-import image2 from "/src/assets/images/1-removebg-preview.png"
-import image3 from "/src/assets/images/2-removebg-preview (1).png"
 
 
 
