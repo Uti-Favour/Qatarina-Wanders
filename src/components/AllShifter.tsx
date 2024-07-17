@@ -7,7 +7,7 @@ const AllShifter = () => {
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10">
           <div>
-            <h1 className="lg:text-7xl text-5xl text-center flex justify-center cinzel-decorative-regular">
+            <h1 className="lg:text-7xl text-4xl text-center flex justify-center cinzel-decorative-regular">
               The Owl Shifter Chronicle
             </h1>
           </div>

@@ -5,7 +5,7 @@ const About = () => {
     <>
       <section className="text-white  py-16" id="about">
         <div className="flex justify-center text-center">
-          <h1 className="font-semibold lg:text-7xl text-5xl cinzel-decorative-regular">
+          <h1 className="lg:font-semibold lg:text-7xl text-3xl cinzel-decorative-regular">
             About Quatarina Wanders
           </h1>
         </div>

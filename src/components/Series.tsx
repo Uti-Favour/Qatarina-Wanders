@@ -47,9 +47,9 @@ const Series: React.FC = () => {
   }, []); // Empty dependency array ensures useEffect runs once
 
   return (
-    <section className=" text-white py-5">
+    <section className=" text-white lg:py-5">
       <div className="mt-16">
-        <h1 className="lg:text-6xl text-4xl lg:mx-[200px] text-center flex justify-center cinzel-decorative-regular">
+        <h1 className="lg:text-6xl text-4xl lg:mx-[200px] mx-5 text-center flex justify-center cinzel-decorative-regular">
         Explore My Collections of Different Genres
         </h1>
       </div>

@@ -7,7 +7,7 @@ import "../css/styles.css"
 
 const Hero: FC = () => {
   return (
-    <section className="relative lg:h-screen bg-black text-white pt-48 lg:py-0">
+    <section className="relative lg:h-screen bg-black text-white pt-24 lg:py-0">
       {/* Video Background */}
       <video
         autoPlay
@@ -25,8 +25,8 @@ const Hero: FC = () => {
       {/* Content */}
       <div className="relative z-10 lg:flex h-full w-full lg:justify-between">
         {/* Page Left */}
-        <div className="max-w-2xl space-y-8  lg:ml-10 ml-5 lg:mt-32 ">
-          <h1 className="max-w-xl lg:text-7xl text-5xl  font-medium  old-standard-tt-regular">
+        <div className="max-w-2xl lg:space-y-8 space-y-5  lg:ml-10 ml-5 lg:mt-32 ">
+          <h1 className="max-w-xl lg:text-6xl text-4xl  font-medium  cinzel-decorative-regular">
             Books That Will Blow Your Mind 
           </h1>
           <p className="max-w-lg">
