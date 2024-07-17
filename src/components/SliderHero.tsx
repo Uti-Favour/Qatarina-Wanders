@@ -3,37 +3,33 @@ import { motion, useMotionValue } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import image1 from "/src/assets/images/Quatarina-Headshot-1-removebg.png";
-import image3 from "/src/assets/images/2-removebg-preview (1).png";
-
-
-
-
+import image3 from "/src/assets/images/13-removebg-preview.png";
 
 const contents = [
   {
     image: image1,
     background: "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Quatarina Wanders",
+    title: "Qatarina Wanders",
     subtitle: "New York Times Bestselling Author",
     button: "Learn More",
   },
   {
     image: "/src/assets/images/1-removebg-preview.png",
-    background: "https://images.unsplash.com/photo-1474983797926-3939622ca489?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Animage Academy Series",
-    subtitle: "Young Adult Academy Urban Fantasy Novel",
+    background: "https://img.freepik.com/free-photo/haunted-house-gothic-style_23-2151626636.jpg?t=st=1721224041~exp=1721227641~hmac=d92a3224c8e7990260710a7e6a79f3e9db5ad1178d04b3f088fdf1bc2a152d69&w=826",
+    title: "Dark Academia Fantasy",
+    subtitle: "An Enchanting Tale",
     button: "Read Now",
   },
   {
     image: image3,
-    background: "https://images.unsplash.com/photo-1442029739115-ce733f0de45e?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Controlled by the Fire Demon",
-    subtitle: "The Apocalypse about to Unleash What could be the Owl Shifter's Fate?",
+    background: "https://img.freepik.com/free-photo/empty-road-dark-atmosphere_23-2150914434.jpg?t=st=1721223653~exp=1721227253~hmac=f137eb611850ef1bb7fe87f58f9399423e523a12bf57688682bf1401d2481a5d&w=740",
+    title: "Dark Apocalyptic Series",
+    subtitle: "A Thrilling Adventure",
     button: "Read Now",
   },
 ];
 
-const ONE_SECOND = 1000000;
+const ONE_SECOND = 1000;
 const AUTO_DELAY = ONE_SECOND * 10;
 const DRAG_BUFFER = 50;
 
@@ -77,7 +73,7 @@ const SliderHero: React.FC = () => {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-neutral-950 mt-10">
+    <div className="relative w-screen lg:h-screen overflow-hidden bg-neutral-950 mt-10">
       <motion.div
         className="flex w-full h-full"
         style={{ x: dragX }}
@@ -130,8 +126,8 @@ const SliderHero: React.FC = () => {
                   </div>
                 </div>
               ) : (
-                <div className="lg:flex justify-between lg:mx-28 lg:h-full items-center">
-                  <div className=" flex items-center ">
+                <div className="lg:flex justify-between lg:mx-28 h-full items-center ">
+                  <div className=" flex items-center">
                    <div className="text-center max-w-3xl mt-32 lg:mt-0">
                    <h2 className="text-white lg:text-6xl text-4xl font-bold mb-4  cinzel-decorative-regular">
                       {content.title}
@@ -146,7 +142,7 @@ const SliderHero: React.FC = () => {
                     <img
                       src={content.image}
                       alt={`Image ${i + 1}`}
-                      className="lg:object-contain lg:w-[800px] lg:h-[500px] mt-5"
+                      className="object-contain lg:w-[800px] w-[400px] h-[400px]  lg:h-[500px] mt-10"
                     />
                   </div>
                 </div>

@@ -3,11 +3,15 @@ import animage_2 from "/src/assets/images/2-removebg-preview.png"
 import animage_3 from "/src/assets/images/3-removebg-preview.png"
 import animage_4 from "/src/assets/images/4-removebg-preview.png"
 
-import qc_1 from "/src/assets/images/1-removebg-preview.png"
+import qc_1 from "/src/assets/images/13-removebg-preview.png"
 import qc_2 from "/src/assets/images/2-removebg-preview (1).png"
 import qc_3 from "/src/assets/images/3-removebg-preview (1).png"
 import qc_4 from "/src/assets/images/4-removebg-preview (1).png"
 
+import expriemental_1 from "/src/assets/images/experimental_1.png"
+import expriemental_2 from "/src/assets/images/experimental_2.png"
+import expriemental_3 from "/src/assets/images/experimental_3.png"
+import expriemental_4 from "/src/assets/images/experiment_4.png"
 const animage_booklist = [
     {
         imagelink : animage_1,
@@ -111,6 +115,30 @@ export const all_books = [
     } ,
     {
         imagelink : qc_4,
+        name : 'Animage Academy Year Four',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        imagelink : expriemental_1,
+        name : 'Animage Academy Year Four',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        imagelink : expriemental_2,
+        name : 'Animage Academy Year Four',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        imagelink : expriemental_3,
+        name : 'Animage Academy Year Four',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        imagelink : expriemental_4,
         name : 'Animage Academy Year Four',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
         amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'

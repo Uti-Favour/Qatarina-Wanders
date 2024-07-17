@@ -1,10 +1,13 @@
 import { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons/faBook";
-import quatarina_headshot from "/src/assets/images/Quatarina-Headshot-2.jpg";
+// import quatarina_headshot from "/src/assets/images/Quatarina-Headshot-2.jpg";
 import nbclogo from "/src/assets/images/NBC_Peacock_1986.svg"
 import "../css/styles.css"
 
+
+// Book Lists
+import { all_books } from "../constants/booklist";
 const Hero: FC = () => {
   return (
     <section className="relative lg:h-screen bg-black text-white pt-24 lg:py-0">
@@ -20,10 +23,10 @@ const Hero: FC = () => {
       </video>
 
       {/* Overlay to darken the video */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-50"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-20"></div>
 
       {/* Content */}
-      <div className="relative z-10 lg:flex h-full w-full lg:justify-between">
+      <div className="relative z-10 lg:flex h-full w-full lg:justify-between items-center">
         {/* Page Left */}
         <div className="max-w-2xl lg:space-y-8 space-y-7  lg:ml-10 ml-5 lg:mt-32 ">
           <h1 className="max-w-xl lg:text-6xl text-4xl  font-medium  cinzel-decorative-regular">
@@ -72,13 +75,21 @@ const Hero: FC = () => {
         {/* Ends Here */}
 
         {/* Quatarina's HeadShot */}
-        <div className="max-w-2xl mt-10 lg:mt-0">
+        {/* <div className="max-w-2xl mt-10 lg:mt-0">
           <img
             src={quatarina_headshot}
             alt="Headshot"
             className="h-screen object-cover rounded-bl-[80px] "
           />
-        </div>
+        </div> */}
+
+       <div className='grid lg:grid-cols-4 grid-cols-3 max-w-lg mt-16 lg:mr-20 '>
+       {all_books.map((series , index) => (
+          <div key={index} className="">
+            <img src={series.imagelink} alt="series" />
+          </div>
+        ))}
+       </div>
       </div>
     </section>
   );

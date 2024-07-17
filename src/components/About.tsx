@@ -1,18 +1,18 @@
 
-import quatarina from "/src/assets/images/Quatarina-Headshot-4.jpg";
+import qatarina from "/src/assets/images/Quatarina-Headshot-4.jpg";
 const About = () => {
   return (
     <>
       <section className="text-white  py-16" id="about">
         <div className="flex justify-center text-center">
           <h1 className="lg:font-semibold lg:text-7xl text-3xl cinzel-decorative-regular">
-            About Quatarina Wanders
+            About Qatarina Wanders
           </h1>
         </div>
         <div className="lg:flex justify-between lg:mx-10 mx-5 lg:mt-14">
         <div className="max-w-2xl lg:mt-0 mt-10">
             <img
-              src={quatarina}
+              src={qatarina}
               alt="quatarina"
               className="lg:rounded-tl-[80px] rounded-tl-[50px] lg:h-[800px] lg:w-[1000px] object-cover "
             />
