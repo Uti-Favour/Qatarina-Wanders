@@ -9,7 +9,7 @@ const AnimageSeries = () => {
         <div className="relative z-10">
           <div>
           <h1 className="lg:text-7xl text-4xl text-center flex justify-center cinzel-decorative-regular">
-          Dark Academia Fantasy
+          Animage Academia Series
             </h1>
           </div>
           <div className="flex justify-center">

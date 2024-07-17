@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { all_books } from "../constants/booklist";
 import "../css/styles.css"; // Import your CSS file for infinite scroll
 
+
 const Series: React.FC = () => {
   useEffect(() => {
     const scrollers = document.querySelectorAll<HTMLElement>(".scroller");
@@ -50,7 +51,7 @@ const Series: React.FC = () => {
     <section className=" text-white lg:py-5">
       <div className="mt-16">
         <h1 className="lg:text-6xl text-4xl lg:mx-[200px] mx-5 text-center flex justify-center cinzel-decorative-regular">
-        Explore My Collections of Different Genres
+        Explore My Collections of Different Genres 
         </h1>
       </div>
 
@@ -70,8 +71,11 @@ const Series: React.FC = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div>  
       </div>
+      <div className="text-white flex justify-center items-center mt-10 text-center">
+      <a href="https://www.amazon.com/stores/Qatarina-Wanders/author/B07YGRBFFL?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true">    <h2 className="lg:text-4xl text-2xl cinzel-decorative-regular underline">Find me on Amazon   <i className="fa-brands fa-amazon lg:text-4xl text-2xl"></i></h2></a>
+        </div>
     </section>
   );
 };

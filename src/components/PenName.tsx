@@ -3,7 +3,7 @@ import { FC } from "react";
 const PenName: FC = () => {
   return (
     <>
-      <section className="text-black  py-14  bg-white">
+      <section className="text-black  py-14  bg-white ">
         <div>
           <div>
             <h1 className="lg:text-7xl text-5xl cinzel-decorative-regular flex justify-center mx-5 text-center lg:text-left">
