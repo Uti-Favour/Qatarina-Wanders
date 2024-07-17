@@ -8,7 +8,7 @@ const AnimageSeries = () => {
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10">
           <div>
-          <h1 className="lg:text-7xl text-5xl text-center flex justify-center old-standard-tt-regular ">
+          <h1 className="lg:text-7xl text-5xl text-center flex justify-center cinzel-decorative-regular">
               Animage Academy Series
             </h1>
           </div>

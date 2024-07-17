@@ -1,35 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronRight,
-  faChevronLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import image1 from "/src/assets/images/Quatarina-Headshot-3.jpg";
 import image2 from "/src/assets/images/1-removebg-preview.png";
 import image3 from "/src/assets/images/2-removebg-preview (1).png";
 
-const imgs = [
-  "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1474983797926-3939622ca489?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1442029739115-ce733f0de45e?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-];
-
 const contents = [
   {
     image: image1,
+    background: "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Quatarina Wanders",
     subtitle: "New York Times Bestselling Author",
     button: "Learn More",
   },
   {
     image: image2,
+    background: "https://images.unsplash.com/photo-1474983797926-3939622ca489?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Mystical Forest",
     subtitle: "An Enchanting Tale",
     button: "Discover",
   },
   {
     image: image3,
+    background: "https://images.unsplash.com/photo-1442029739115-ce733f0de45e?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Majestic Mountains",
     subtitle: "A Journey to Remember",
     button: "Explore",
@@ -55,7 +49,7 @@ const SliderHero: React.FC = () => {
     const intervalRef = setInterval(() => {
       const x = dragX.get();
       if (x === 0) {
-        setImgIndex((prev) => (prev === imgs.length - 1 ? 0 : prev + 1));
+        setImgIndex((prev) => (prev === contents.length - 1 ? 0 : prev + 1));
       }
     }, AUTO_DELAY);
 
@@ -64,7 +58,7 @@ const SliderHero: React.FC = () => {
 
   const onDragEnd = () => {
     const x = dragX.get();
-    if (x <= -DRAG_BUFFER && imgIndex < imgs.length - 1) {
+    if (x <= -DRAG_BUFFER && imgIndex < contents.length - 1) {
       setImgIndex((prev) => prev + 1);
     } else if (x >= DRAG_BUFFER && imgIndex > 0) {
       setImgIndex((prev) => prev - 1);
@@ -72,11 +66,11 @@ const SliderHero: React.FC = () => {
   };
 
   const previousImage = () => {
-    setImgIndex((prev) => (prev > 0 ? prev - 1 : imgs.length - 1));
+    setImgIndex((prev) => (prev > 0 ? prev - 1 : contents.length - 1));
   };
 
   const nextImage = () => {
-    setImgIndex((prev) => (prev < imgs.length - 1 ? prev + 1 : 0));
+    setImgIndex((prev) => (prev < contents.length - 1 ? prev + 1 : 0));
   };
 
   return (
@@ -96,25 +90,51 @@ const SliderHero: React.FC = () => {
               className="w-full h-full flex-shrink-0 relative"
               animate={{ x: `-${imgIndex * 100}%` }}
               transition={SPRING_OPTIONS}
+              style={{
+                backgroundImage: `url(${content.background})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
             >
-              <div className="lg:flex lg:h-full mt-24">
-                <div className="w-1/2 flex flex-col justify-center items-center px-8">
-                  <h2 className="text-white text-4xl font-bold mb-4">
-                    {content.title}
-                  </h2>
-                  <p className="text-white text-lg mb-6">{content.subtitle}</p>
-                  <button className="bg-white text-black py-2 px-6 rounded-full">
-                    {content.button}
-                  </button>
+              {i === 0 ? (
+                <div className="lg:flex lg:h-full mt-24 bg-black bg-opacity-50">
+                  <div className="w-1/2">
+                    <img
+                      src={content.image}
+                      alt={`Image ${i + 1}`}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="w-1/2 flex flex-col justify-center items-center px-8">
+                    <h2 className="text-white text-4xl font-bold mb-4">
+                      {content.title}
+                    </h2>
+                    <p className="text-white text-lg mb-6">{content.subtitle}</p>
+                    <button className="bg-white text-black py-2 px-6 rounded-full">
+                      {content.button}
+                    </button>
+                  </div>
                 </div>
-                <div className="w-1/2">
-                  <img
-                    src={content.image}
-                    alt={`Image ${i + 1}`}
-                    className="object-cover w-full h-full"
-                  />
+              ) : (
+                <div className="lg:flex lg:h-full mt-24">
+                  <div className="w-1/2 flex flex-col justify-center items-center px-8">
+                    <h2 className="text-white text-4xl font-bold mb-4">
+                      {content.title}
+                    </h2>
+                    <p className="text-white text-lg mb-6">{content.subtitle}</p>
+                    <button className="bg-white text-black py-2 px-6 rounded-full">
+                      {content.button}
+                    </button>
+                  </div>
+                  <div className="w-1/2">
+                    <img
+                      src={content.image}
+                      alt={`Image ${i + 1}`}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
                 </div>
-              </div>
+              )}
             </motion.div>
           ))}
         </div>
