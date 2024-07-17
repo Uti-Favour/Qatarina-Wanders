@@ -5,11 +5,9 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import image1 from "/src/assets/images/Quatarina-Headshot-3.jpg"
-import image2 from "/src/assets/images/1-removebg-preview.png"
-import image3 from "/src/assets/images/2-removebg-preview (1).png"
-
-
+import image1 from "/src/assets/images/Quatarina-Headshot-3.jpg";
+import image2 from "/src/assets/images/1-removebg-preview.png";
+import image3 from "/src/assets/images/2-removebg-preview (1).png";
 
 const imgs = [
   "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -19,19 +17,19 @@ const imgs = [
 
 const contents = [
   {
-    image : image1,
-    title : "Quatarina Wanders",
+    image: image1,
+    title: "Quatarina Wanders",
     subtitle: "New York Times Bestselling Author",
     button: "Learn More",
   },
   {
-    image : image2,
+    image: image2,
     title: "Mystical Forest",
     subtitle: "An Enchanting Tale",
     button: "Discover",
   },
   {
-    image : image3,
+    image: image3,
     title: "Majestic Mountains",
     subtitle: "A Journey to Remember",
     button: "Explore",
@@ -82,7 +80,7 @@ const SliderHero: React.FC = () => {
   };
 
   return (
-    <div className="relative w-screen h-screen  overflow-hidden bg-neutral-950">
+    <div className="relative w-screen h-screen overflow-hidden bg-neutral-950">
       <motion.div
         className="flex w-full h-full"
         style={{ x: dragX }}
@@ -91,21 +89,31 @@ const SliderHero: React.FC = () => {
         onDragEnd={onDragEnd}
         transition={SPRING_OPTIONS}
       >
-        <div className="flex w-full h-full ">
-          {imgs.map((img, i) => (
+        <div className="flex w-full h-full">
+          {contents.map((content, i) => (
             <motion.div
               key={i}
               className="w-full h-full flex-shrink-0 relative"
               animate={{ x: `-${imgIndex * 100}%` }}
               transition={SPRING_OPTIONS}
             >
-              <img
-                src={img}
-                alt={`Image ${i + 1}`}
-                className="object-cover w-full h-full"
-              />
-              <div>
-              
+              <div className="lg:flex lg:h-full mt-24">
+                <div className="w-1/2 flex flex-col justify-center items-center px-8">
+                  <h2 className="text-white text-4xl font-bold mb-4">
+                    {content.title}
+                  </h2>
+                  <p className="text-white text-lg mb-6">{content.subtitle}</p>
+                  <button className="bg-white text-black py-2 px-6 rounded-full">
+                    {content.button}
+                  </button>
+                </div>
+                <div className="w-1/2">
+                  <img
+                    src={content.image}
+                    alt={`Image ${i + 1}`}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
               </div>
             </motion.div>
           ))}
