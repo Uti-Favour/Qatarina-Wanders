@@ -3,8 +3,12 @@ import { motion, useMotionValue } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import image1 from "/src/assets/images/Quatarina-Headshot-1-removebg.png";
-import image2 from "/src/assets/images/1-removebg-preview.png";
+import image2 from "/src/assets/images/Untitled_design__1_-removebg-preview.png";
 import image3 from "/src/assets/images/2-removebg-preview (1).png";
+
+
+
+
 
 const contents = [
   {
@@ -15,18 +19,18 @@ const contents = [
     button: "Learn More",
   },
   {
-    image: image2,
+    image: "/src/assets/images/1-removebg-preview.png",
     background: "https://images.unsplash.com/photo-1474983797926-3939622ca489?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Mystical Forest",
-    subtitle: "An Enchanting Tale",
-    button: "Discover",
+    title: "Animage Academy Series",
+    subtitle: "Young Adult Academy Urban Fantasy Novel",
+    button: "Read Now",
   },
   {
     image: image3,
     background: "https://images.unsplash.com/photo-1442029739115-ce733f0de45e?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Majestic Mountains",
-    subtitle: "A Journey to Remember",
-    button: "Explore",
+    title: "Controlled by the Fire Demon",
+    subtitle: "The Apocalypse about to Unleash What could be the Owl Shifter's Fate?",
+    button: "Read Now",
   },
 ];
 
@@ -105,7 +109,7 @@ const SliderHero: React.FC = () => {
                       className="object-cover w-full h-full"
                     />
                   </div>
-                  <div className=" flex justify-center items-center mt-32">
+                  <div className=" flex justify-center items-center lg:mt-16 mt-32">
                   <div className="text-center">
                   <h2 className="text-white lg:text-6xl text-5xl font-bold mb-4 cinzel-decorative-regular">
                       {content.title}
@@ -127,21 +131,23 @@ const SliderHero: React.FC = () => {
                   </div>
                 </div>
               ) : (
-                <div className="lg:flex lg:h-full mt-24">
-                  <div className="w-1/2 flex flex-col justify-center items-center px-8">
-                    <h2 className="text-white text-4xl font-bold mb-4">
+                <div className="lg:flex justify-between lg:mx-28 lg:h-full items-center">
+                  <div className=" flex items-center ">
+                   <div className="text-center max-w-3xl mt-32 lg:mt-0">
+                   <h2 className="text-white lg:text-6xl text-4xl font-bold mb-4  cinzel-decorative-regular">
                       {content.title}
                     </h2>
-                    <p className="text-white text-lg mb-6">{content.subtitle}</p>
-                    <button className="bg-white text-black py-2 px-6 rounded-full">
+                    <p className="text-white text-lg mb-6 cinzel-decorative-regular">{content.subtitle}</p>
+                    <button className="bg-white text-black py-4 px-20 cinzel-decorative-regular">
                       {content.button}
                     </button>
+                   </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="">
                     <img
                       src={content.image}
                       alt={`Image ${i + 1}`}
-                      className="object-cover w-full h-full"
+                      className="lg:object-contain lg:w-[800px] lg:h-[500px] mt-5"
                     />
                   </div>
                 </div>
