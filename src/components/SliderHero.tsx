@@ -3,7 +3,6 @@ import { motion, useMotionValue } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import image1 from "/src/assets/images/Quatarina-Headshot-1-removebg.png";
-import image2 from "/src/assets/images/Untitled_design__1_-removebg-preview.png";
 import image3 from "/src/assets/images/2-removebg-preview (1).png";
 
 
