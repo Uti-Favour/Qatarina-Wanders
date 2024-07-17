@@ -14,16 +14,17 @@ const Navbar = () => {
           <li><a href="#" className="hover:text-gray-700">Home</a></li>
           <li><a href="#about" className="hover:text-gray-700">About</a></li>
           <li><a href="#" className="hover:text-gray-700">Books</a></li>
-          <li><a href="#" className="hover:text-gray-700">Grishaverse</a></li>
-          <li><a href="#" className="hover:text-gray-700">Reading Order</a></li>
-          <li><a href="#" className="hover:text-gray-700">News</a></li>
-          <li><a href="#" className="hover:text-gray-700">Events</a></li>
           <li><a href="#" className="hover:text-gray-700">Contact</a></li>
-          <li><a href="#" className="hover:text-gray-700">Shop</a></li>
+       
         </ul>
         <div className="hidden md:block">
           <a href="https://www.instagram.com" className="text-gray-700 hover:text-gray-900">
+          <div className='space-x-5'>
           <i className="fa-brands fa-instagram text-2xl"></i>
+          <i className="fa-brands fa-facebook text-2xl"></i>
+          <i className="fa-brands fa-tiktok text-2xl"></i>
+          <i className="fa-brands fa-linkedin text-2xl"></i>
+          </div>
           </a>
         </div>
         <div className="md:hidden flex items-center">

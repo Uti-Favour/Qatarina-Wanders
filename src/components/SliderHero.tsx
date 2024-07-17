@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import image1 from "/src/assets/images/Quatarina-Headshot-3.jpg";
+import image1 from "/src/assets/images/Quatarina-Headshot-1-removebg.png";
 import image2 from "/src/assets/images/1-removebg-preview.png";
 import image3 from "/src/assets/images/2-removebg-preview (1).png";
 
@@ -30,7 +30,7 @@ const contents = [
   },
 ];
 
-const ONE_SECOND = 1000;
+const ONE_SECOND = 1000000;
 const AUTO_DELAY = ONE_SECOND * 10;
 const DRAG_BUFFER = 50;
 
@@ -74,7 +74,7 @@ const SliderHero: React.FC = () => {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-neutral-950">
+    <div className="relative w-screen h-screen overflow-hidden bg-neutral-950 mt-10">
       <motion.div
         className="flex w-full h-full"
         style={{ x: dragX }}
@@ -97,22 +97,33 @@ const SliderHero: React.FC = () => {
               }}
             >
               {i === 0 ? (
-                <div className="lg:flex lg:h-full mt-24 bg-black bg-opacity-50">
-                  <div className="w-1/2">
+                <div className="lg:flex lg:h-full  justify-between lg:mr-24">
+                  <div className="max-w-lg hidden lg:block ml-10">
                     <img
                       src={content.image}
                       alt={`Image ${i + 1}`}
                       className="object-cover w-full h-full"
                     />
                   </div>
-                  <div className="w-1/2 flex flex-col justify-center items-center px-8">
-                    <h2 className="text-white text-4xl font-bold mb-4">
+                  <div className=" flex justify-center items-center mt-32">
+                  <div className="text-center">
+                  <h2 className="text-white lg:text-6xl text-5xl font-bold mb-4 cinzel-decorative-regular">
                       {content.title}
                     </h2>
-                    <p className="text-white text-lg mb-6">{content.subtitle}</p>
-                    <button className="bg-white text-black py-2 px-6 rounded-full">
+                    <p className="text-white text-lg mb-6 cinzel-decorative-regular mx-5 lg:mx-0">{content.subtitle}</p>
+                   <a href="#about">
+                   <button className="bg-white text-black py-4 px-16 font-semibold cinzel-decorative-regular">
                       {content.button}
                     </button>
+                   </a>
+                    </div> 
+                  </div>
+                  <div className="lg:w-1/2 block lg:hidden">
+                    <img
+                      src={content.image}
+                      alt={`Image ${i + 1}`}
+                      className=""
+                    />
                   </div>
                 </div>
               ) : (

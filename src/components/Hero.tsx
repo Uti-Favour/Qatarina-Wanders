@@ -25,7 +25,7 @@ const Hero: FC = () => {
       {/* Content */}
       <div className="relative z-10 lg:flex h-full w-full lg:justify-between">
         {/* Page Left */}
-        <div className="max-w-2xl lg:space-y-8 space-y-5  lg:ml-10 ml-5 lg:mt-32 ">
+        <div className="max-w-2xl lg:space-y-8 space-y-7  lg:ml-10 ml-5 lg:mt-32 ">
           <h1 className="max-w-xl lg:text-6xl text-4xl  font-medium  cinzel-decorative-regular">
             Books That Will Blow Your Mind 
           </h1>
