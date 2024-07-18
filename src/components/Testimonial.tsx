@@ -9,16 +9,14 @@ const Testimonial: FC = () => {
     <>
       <section className=" parallax  py-14">
         <div>
-            <h1 className="lg:text-7xl text-4xl flex justify-center text-white   cinzel-decorative-regular">Testimonials</h1>
+            <h1 className="lg:text-6xl text-4xl flex justify-center text-white   cinzel-decorative-regular underline">Testimonials</h1>
         </div>
-        <div className="text-white lg:flex justify-between lg:mx-10 mx-5 mt-10">
+        <div className="text-white lg:flex justify-between lg:mx-10 mx-5 mt-10 lg:mt-20">
           <div className="space-y-8 max-w-lg">
             <h1 className="lg:text-5xl text-3xl  cinzel-decorative-regular">What Readers Say About The Books</h1>
             <div className="h-[2xp] w-[5px] bg-white"></div>
             <p className="text-lg max-w-sm">
-              If you are going to use a passage of Lorem Ipsum, you need to be
-              sure there isn't anything embarrassing hidden in the middle of
-              text. All the Lorem Ipsum generators.
+            From compelling plots to unforgettable characters, explore heartfelt testimonials and reviews that highlight the impact and magic of these stories.
             </p>
             <div className="h-2 w-20 bg-white"></div>
 

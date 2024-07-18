@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-20">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-20 ">
       <div className="container mx-auto flex items-center justify-between py-4 px-8">
         <div className="flex items-center space-x-4">
          <h1 className='great-vibes-regular text-4xl'>QW</h1>

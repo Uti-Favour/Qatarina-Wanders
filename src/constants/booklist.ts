@@ -146,4 +146,31 @@ export const all_books = [
     } ,
 ]
 
+export const experimental_series = [
+    {
+        imagelink : expriemental_4,
+        name : 'Animage Academy Year Four',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        
+        imagelink : expriemental_2,
+        name : 'Animage Academy Year Four',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        imagelink : expriemental_3,
+        name : 'Animage Academy Year Four',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        imagelink : expriemental_1,
+        name : 'Animage Academy Year Four',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+]
 export default animage_booklist
