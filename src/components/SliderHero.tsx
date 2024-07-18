@@ -125,7 +125,7 @@ const SliderHero: React.FC = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="lg:w-1/2 block lg:hidden mt-24 lg:mt-0">
+                  <div className="lg:w-1/2 block lg:hidden  lg:mt-0">
                     <img
                       src={content.image}
                       alt={`Image ${i + 1}`}
@@ -137,8 +137,9 @@ const SliderHero: React.FC = () => {
                 <div className="relative w-full lg:flex lg:h-full justify-between items-center">
                   <div className="absolute inset-0 lg:bg-black lg:opacity-70 z-10"></div>{" "}
                   {/* Dark overlay */}
-                  <div className="relative z-20 flex justify-center items-center lg:mt-16 mt-32 w-full">
-                    <div className="text-center max-w-xl ">
+                  <div className="lg:flex lg:mx-40 items-center">
+                  <div className="relative z-20  items-center lg:mt-16 mt-32 w-full">
+                    <div className="text-center max-w-xl">
                       <h2 className="text-white lg:text-5xl text-5xl font-bold mb-4 cinzel-decorative-regular">
                         {content.title}
                       </h2>
@@ -152,12 +153,13 @@ const SliderHero: React.FC = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="lg:w-1/2">
+                  <div className="z-20 mt-10">
                     <img
                       src={content.image}
                       alt={`Image ${i + 1}`}
                       className=""
                     />
+                  </div>
                   </div>
                 </div>
               )}
