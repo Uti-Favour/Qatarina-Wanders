@@ -12,10 +12,10 @@ const Navbar: React.FC = () => {
          <h1 className='great-vibes-regular text-4xl'>QW</h1>
         </div>
         <ul className="hidden md:flex space-x-8 text-black text-lg font-medium">
-          <Link to = {"/"} className=">hover:text-gray-700">Home</Link>
-          <Link to = {"/about"} className=">hover:text-gray-700">About</Link>
-          <Link to = {"books"} className=">hover:text-gray-700">Books</Link>
-          <Link to = {"/contact"} className=">hover:text-gray-700">Contact</Link>
+          <li><Link to = {"/"} className=">hover:text-gray-700">Home</Link></li>
+          <li><Link to = {"/about"} className=">hover:text-gray-700">About</Link></li>
+          <li><Link to = {"books"} className=">hover:text-gray-700">Books</Link></li>
+          <li><Link to = {"/contact"} className=">hover:text-gray-700">Contact</Link></li>
        
         </ul>
         <div className="hidden md:block">
@@ -38,16 +38,11 @@ const Navbar: React.FC = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <ul className="px-4 pb-4 space-y-2">
-            <li><a href="#" className="block py-2 text-gray-700 hover:text-gray-900">Home</a></li>
-            <li><a href="#" className="block py-2 text-gray-700 hover:text-gray-900">About</a></li>
-            <li><a href="#" className="block py-2 text-gray-700 hover:text-gray-900">Books</a></li>
-            <li><a href="#" className="block py-2 text-gray-700 hover:text-gray-900">Grishaverse</a></li>
-            <li><a href="#" className="block py-2 text-gray-700 hover:text-gray-900">Reading Order</a></li>
-            <li><a href="#" className="block py-2 text-gray-700 hover:text-gray-900">News</a></li>
-            <li><a href="#" className="block py-2 text-gray-700 hover:text-gray-900">Events</a></li>
-            <li><a href="#" className="block py-2 text-gray-700 hover:text-gray-900">Contact</a></li>
-            <li><a href="#" className="block py-2 text-gray-700 hover:text-gray-900">Shop</a></li>
+          <ul className="px-4 pb-4 space-y-4">
+            <li><Link to = {"/"} className="py-2 text-gray-700 hover:text-gray-700">Home</Link></li>
+            <li><Link to = {"/about"} className=" py-2 text-gray-700 hover:text-gray-700">About</Link></li>
+            <li><Link to = {"books"} className="py-2 text-gray-700 hover:text-gray-700">Books</Link></li>
+            <li><Link to = {"/contact"} className="py-2 text-gray-700 hover:text-gray-700">Contact</Link></li>
             <li className="flex justify-center">
               <a href="https://www.instagram.com" className="text-gray-700 hover:text-gray-900">
               <i className="fa-brands fa-instagram"></i>

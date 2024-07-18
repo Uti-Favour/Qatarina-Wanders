@@ -8,19 +8,23 @@ const AnimageSeries = () => {
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10">
           <div>
-          <h1 className="lg:text-7xl text-4xl text-center flex justify-center cinzel-decorative-regular">
-          Animage Academia Series
+            <h1 className="lg:text-7xl text-4xl text-center flex justify-center cinzel-decorative-regular">
+              Animage Academia Series
             </h1>
           </div>
           <div className="flex justify-center">
             <div className="grid lg:grid-cols-4 grid-cols-2 mt-10 lg:gap-8">
               {animage_booklist.map((books, index) => (
-                <div key={index}>
+                <div key={index} className="relative group ">
                   <img
                     src={books.imagelink}
                     alt="animage series"
-                    className="w-72"
+                    className="w-full h-auto"
                   />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40  rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h2 className="text-xl text-center mx-5 mb-2 cinzel-decorative-bold">{books.name}</h2>
+                   <a href={books.amazonlink}><button className="bg-white text-black text-base px-4 py-2 rounded cinzel-decorative-regular mt-3">Read More</button></a>
+                  </div>
                 </div>
               ))}
             </div>

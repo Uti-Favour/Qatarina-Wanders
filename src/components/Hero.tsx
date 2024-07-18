@@ -10,20 +10,20 @@ import "../css/styles.css"
 import { all_books } from "../constants/booklist";
 const Hero: FC = () => {
   return (
-    <section className="relative lg:h-screen bg-black text-white pt-24 lg:py-0">
+    <section className="relative lg:h-screen bg-black text-white pt-24 lg:py-0 ">
       {/* Video Background */}
       <video
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full lg:h-[130%] h-full  object-cover"
       >
-        <source src="https://videos.pexels.com/video-files/5020576/5020576-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+        <source src="https://cdn.pixabay.com/video/2022/10/11/134355-759233649_large.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* Overlay to darken the video */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-60 opacity-20"></div>
+      <div className="absolute top-0 left-0 w-full lg:h-[120%] h-full bg-black lg:opacity-60 opacity-20"></div>
 
       {/* Content */}
       <div className="relative z-10 lg:flex h-full w-full lg:justify-between items-center">
@@ -83,7 +83,7 @@ const Hero: FC = () => {
           />
         </div> */}
 
-       <div className='grid lg:grid-cols-4 grid-cols-3 max-w-lg mt-16 lg:mr-20 '>
+       <div className='grid lg:grid-cols-4 grid-cols-3 max-w-lg mt-16 lg:mt-32 lg:mr-20 '>
        {all_books.map((series , index) => (
           <div key={index} className="">
             <img src={series.imagelink} alt="series" />
