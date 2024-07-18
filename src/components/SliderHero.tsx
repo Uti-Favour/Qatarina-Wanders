@@ -126,26 +126,29 @@ const SliderHero: React.FC = () => {
                   </div>
                 </div>
               ) : (
-                <div className="lg:flex justify-between lg:mx-28 h-full items-center ">
-                  <div className=" flex items-center">
-                   <div className="text-center max-w-3xl mt-32 lg:mt-0">
-                   <h2 className="text-white lg:text-6xl text-4xl font-bold mb-4  cinzel-decorative-regular">
-                      {content.title}
-                    </h2>
-                    <p className="text-white text-lg mb-6 cinzel-decorative-regular">{content.subtitle}</p>
-                    <button className="bg-white text-black py-4 px-20 cinzel-decorative-regular">
-                      {content.button}
-                    </button>
-                   </div>
-                  </div>
-                  <div className="">
-                    <img
-                      src={content.image}
-                      alt={`Image ${i + 1}`}
-                      className="object-contain lg:w-[800px] w-[400px] h-[400px]  lg:h-[500px] mt-10"
-                    />
-                  </div>
+                <div className="lg:flex lg:h-full  justify-between lg:mr-24">
+               
+                <div className=" flex justify-center items-center lg:mt-16 mt-32">
+                <div className="text-center">
+                <h2 className="text-white lg:text-6xl text-5xl font-bold mb-4 cinzel-decorative-regular">
+                    {content.title}
+                  </h2>
+                  <p className="text-white text-lg mb-6 cinzel-decorative-regular mx-5 lg:mx-0">{content.subtitle}</p>
+                 <a href="#about">
+                 <button className="bg-white text-black py-4 px-16 font-semibold cinzel-decorative-regular">
+                    {content.button}
+                  </button>
+                 </a>
+                  </div> 
                 </div>
+                <div className="lg:w-1/2">
+                  <img
+                    src={content.image}
+                    alt={`Image ${i + 1}`}
+                    className=""
+                  />
+                </div>
+              </div>
               )}
             </motion.div>
           ))}

@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -11,10 +12,10 @@ const Navbar = () => {
          <h1 className='great-vibes-regular text-4xl'>QW</h1>
         </div>
         <ul className="hidden md:flex space-x-8 text-black text-lg font-medium">
-          <li><a href="#" className="hover:text-gray-700">Home</a></li>
-          <li><a href="#about" className="hover:text-gray-700">About</a></li>
-          <li><a href="#" className="hover:text-gray-700">Books</a></li>
-          <li><a href="#" className="hover:text-gray-700">Contact</a></li>
+          <Link to = {"/"} className=">hover:text-gray-700">Home</Link>
+          <Link to = {"/about"} className=">hover:text-gray-700">About</Link>
+          <Link to = {"books"} className=">hover:text-gray-700">Books</Link>
+          <Link to = {"/contact"} className=">hover:text-gray-700">Contact</Link>
        
         </ul>
         <div className="hidden md:block">
