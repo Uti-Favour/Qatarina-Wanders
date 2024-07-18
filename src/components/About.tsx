@@ -58,9 +58,9 @@ const About = () => {
                 and narratives.
               </p>
             </div>
-            <div className="mt-10">
+            <div className="mt-10 flex justify-center">
               <a href="https://www.amazon.com/stores/Qatarina-Wanders/author/B07YGRBFFL?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true">
-                <button className="py-3 px-10 bg-white text-black text-lg font-semibold rounded-xl ">
+                <button className="py-3 lg:px-32 px-20 bg-white text-black text-lg font-semibold rounded-xl">
                   Start Reading Now
                 </button>
               </a>

@@ -12,6 +12,13 @@ import expriemental_1 from "/src/assets/images/experimental_1.png"
 import expriemental_2 from "/src/assets/images/experimental_2.png"
 import expriemental_3 from "/src/assets/images/experimental_3.png"
 import expriemental_4 from "/src/assets/images/experiment_4.png"
+
+
+import more_books1 from "/src/assets/images/7-removebg-preview.png"
+import more_books2 from "/src/assets/images/4-removebg-preview (2).png"
+import more_books3 from "/src/assets/images/5-removebg-preview.png"
+import more_books4 from "/src/assets/images/8-removebg-preview.png"
+
 const animage_booklist = [
     {
         imagelink : animage_1,
@@ -149,26 +156,53 @@ export const all_books = [
 export const experimental_series = [
     {
         imagelink : expriemental_4,
-        name : 'Animage Academy Year Four',
+        name : 'BOUNTY HUNTRESS BOOK 1',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
         amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
     } ,
     {
         
         imagelink : expriemental_2,
-        name : 'Animage Academy Year Four',
+        name : 'EXPERIMENTAL INTEGRATION',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
         amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
     } ,
     {
         imagelink : expriemental_3,
-        name : 'Animage Academy Year Four',
+        name : 'EXPERIMENTAL CALIBRATION',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
         amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
     } ,
     {
         imagelink : expriemental_1,
-        name : 'Animage Academy Year Four',
+        name : 'EXPERIMENTAL ACTIVATION',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+]
+export const more_books = [
+    {
+        imagelink : more_books1,
+        name : 'The Tya Yoga Practice',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        
+        imagelink : more_books2,
+        name : 'The Course Of The Owl',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        imagelink : more_books3,
+        name : 'Living An Unedited Life',
+        description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
+        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+    } ,
+    {
+        imagelink : more_books4,
+        name : 'Overcoming Chronicle Pain Through Yoga',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
         amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
     } ,
