@@ -14,12 +14,16 @@ const AllShifter = () => {
          <div className="flex justify-center">
          <div className="grid lg:grid-cols-4 grid-cols-2 mt-10 lg:gap-8">
             {all_shifter.map((books , index) => (
-              <div key={index}>
+              <div key={index}  className="relative group  lg:w-72">
                 <img
                   src={books.imagelink}
                   alt="animage series"
                   className="w-72"
                 />
+                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40  rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h2 className="text-xl text-center mx-5 mb-2 cinzel-decorative-bold capitalize">{books.name}</h2>
+                   <a href={books.amazonlink}><button className="bg-white text-black text-base px-4 py-2 rounded cinzel-decorative-regular mt-3">Read More</button></a>
+                  </div>
               </div>
             ))}
           </div>

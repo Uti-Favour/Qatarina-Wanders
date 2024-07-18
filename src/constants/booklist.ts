@@ -45,27 +45,27 @@ export const all_shifter = [
     
         {
             imagelink : qc_1,
-            name : 'Animage Academy Year Four',
+            name : 'Adopted By The Owl',
             description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-            amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+            amazonlink : 'https://www.amazon.com/gp/product/B07XLVM8DT?ref_=dbs_m_mng_rwt_calw_tkin_0&storeType=ebooks'
         } ,
         {
             imagelink : qc_2,
-            name : 'Animage Academy Year Four',
+            name : 'Controlled By A Fire Demon',
             description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-            amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+            amazonlink : 'https://www.amazon.com/gp/product/B07XZNS9GC?ref_=dbs_m_mng_rwt_calw_tkin_1&storeType=ebooks'
         } ,
         {
             imagelink : qc_3,
-            name : 'Animage Academy Year Four',
+            name : 'Born To Raise Hell',
             description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-            amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+            amazonlink : 'https://www.amazon.com/gp/product/B08133J5N4?ref_=dbs_m_mng_rwt_calw_tkin_2&storeType=ebooks'
         } ,
         {
             imagelink : qc_4,
-            name : 'Animage Academy Year Four',
+            name : 'The Dual Adoption',
             description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-            amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+            amazonlink : 'https://www.amazon.com/gp/product/B086HV5WM1?ref_=dbs_m_mng_rwt_calw_tkin_3&storeType=ebooks'
         } ,
     
 ]
@@ -97,28 +97,29 @@ export const all_books = [
     },
     {
         imagelink : qc_1,
-        name : 'Animage Academy Year Four',
+        name : 'Adopted By The Owl',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+        amazonlink : 'https://www.amazon.com/gp/product/B07XLVM8DT?ref_=dbs_m_mng_rwt_calw_tkin_0&storeType=ebooks'
     } ,
     {
         imagelink : qc_2,
-        name : 'Animage Academy Year Four',
+        name : 'Controlled By A Fire Demon',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+        amazonlink : 'https://www.amazon.com/gp/product/B07XZNS9GC?ref_=dbs_m_mng_rwt_calw_tkin_1&storeType=ebooks'
     } ,
     {
         imagelink : qc_3,
-        name : 'Animage Academy Year Four',
+        name : 'Born To Raise Hell',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+        amazonlink : 'https://www.amazon.com/gp/product/B08133J5N4?ref_=dbs_m_mng_rwt_calw_tkin_2&storeType=ebooks'
     } ,
     {
         imagelink : qc_4,
-        name : 'Animage Academy Year Four',
+        name : 'The Dual Adoption',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+        amazonlink : 'https://www.amazon.com/gp/product/B086HV5WM1?ref_=dbs_m_mng_rwt_calw_tkin_3&storeType=ebooks'
     } ,
+
     {
         imagelink : expriemental_1,
         name : 'Animage Academy Year Four',
