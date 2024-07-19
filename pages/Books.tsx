@@ -31,11 +31,11 @@ const Books: React.FC = () => {
             <div className="relative group  lg:w-72">
               <img src={book.imagelink} alt="" className="" />
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50  rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300 text-white">
-                <h2 className="text-xl text-center mx-5 mb-2 cinzel-decorative-bold capitalize">
+                <h2 className="lg:text-xl text-base text-center mx-5 mb-2 cinzel-decorative-bold capitalize">
                   {book.name}
                 </h2>
                 <a href={book.amazonlink}>
-                  <button className="bg-white text-black text-base px-4 py-2 rounded cinzel-decorative-regular mt-3">
+                  <button className="bg-white text-black text-sm lg:px-4 px-2 py-2 rounded cinzel-decorative-regular mt-3">
                     Read More
                   </button>
                 </a>
@@ -59,11 +59,11 @@ const Books: React.FC = () => {
             <div className="relative group  lg:w-72">
               <img src={book.imagelink} alt="" className="" />
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50  rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300 text-white">
-                <h2 className="text-xl text-center mx-5 mb-2 cinzel-decorative-bold capitalize">
+                <h2 className="lg:text-xl text-base text-center mx-5 mb-2 cinzel-decorative-bold capitalize">
                   {book.name}
                 </h2>
                 <a href={book.amazonlink}>
-                  <button className="bg-white text-black text-base px-4 py-2 rounded cinzel-decorative-regular mt-3">
+                  <button className="bg-white text-black text-sm lg:px-4 px-2 py-2 rounded cinzel-decorative-regular mt-3">
                     Read More
                   </button>
                 </a>
@@ -87,11 +87,11 @@ const Books: React.FC = () => {
             <div className="relative group  lg:w-72">
               <img src={book.imagelink} alt="" className="" />
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50  rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300 text-white">
-                <h2 className="text-xl text-center mx-5 mb-2 cinzel-decorative-bold capitalize">
+                <h2 className="lg:text-xl text-base text-center mx-5 mb-2 cinzel-decorative-bold capitalize">
                   {book.name}
                 </h2>
                 <a href={book.amazonlink}>
-                  <button className="bg-white text-black text-base px-4 py-2 rounded cinzel-decorative-regular mt-3">
+                  <button className="bg-white text-black text-sm lg:px-4 px-2 py-2 rounded cinzel-decorative-regular mt-3">
                     Read More
                   </button>
                 </a>
@@ -114,11 +114,11 @@ const Books: React.FC = () => {
             <div className="relative group  lg:w-72">
               <img src={book.imagelink} alt="" className="" />
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50  rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300 text-white">
-                <h2 className="text-xl text-center mx-5 mb-2 cinzel-decorative-bold capitalize">
+                <h2 className="lg:text-xl text-base text-center mx-5 mb-2 cinzel-decorative-bold capitalize">
                   {book.name}
                 </h2>
                 <a href={book.amazonlink}>
-                  <button className="bg-white text-black text-base px-4 py-2 rounded cinzel-decorative-regular mt-3">
+                  <button className="bg-white text-sm  lg:px-4 px-2 py-2 rounded cinzel-decorative-regular mt-3">
                     Read More
                   </button>
                 </a>

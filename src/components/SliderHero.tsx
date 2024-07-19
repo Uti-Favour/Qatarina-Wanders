@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import image1 from "/src/assets/images/Quatarina-Headshot-1-removebg.png";
-import image2 from "/src/assets/images/1-removebg-preview.png"
+import image2 from "/src/assets/images/1-removebg-preview.png";
 import image3 from "/src/assets/images/13-removebg-preview.png";
 
 const contents = [
@@ -23,21 +23,21 @@ const contents = [
     image: image2,
     background:
       "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0687daa4-87a2-44ff-bcb3-a87d32d90c17/deuv4xf-69f31271-3739-4466-9c0d-ff6423946986.jpg/v1/fill/w_1193,h_670,q_70,strp/terror_mansion_by_krannart_deuv4xf-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE5IiwicGF0aCI6IlwvZlwvMDY4N2RhYTQtODdhMi00NGZmLWJjYjMtYTg3ZDMyZDkwYzE3XC9kZXV2NHhmLTY5ZjMxMjcxLTM3MzktNDQ2Ni05YzBkLWZmNjQyMzk0Njk4Ni5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.g_P5U6CT6oB951yIpnYp2PDTP8ZYb0EDlAyt21SlgPs",
-    title: " Academy Fantasy",
+    title: "Dark Academy Fantasy",
     subtitle: "An Enchanting Tale",
     button: "Read Now",
   },
   {
     image: image3,
     background:
-      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84d935bc-6f35-47c7-88ca-108d3e8a3c8f/dgosm5d-b1dc0961-750a-4c89-97ea-cc6cc8b00495.jpg/v1/fill/w_1154,h_692,q_70,strp/gothic_castle_2_by_hentaiuser33_dgosm5d-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzAwIiwicGF0aCI6IlwvZlwvODRkOTM1YmMtNmYzNS00N2M3LTg4Y2EtMTA4ZDNlOGEzYzhmXC9kZ29zbTVkLWIxZGMwOTYxLTc1MGEtNGM4OS05N2VhLWNjNmNjOGIwMDQ5NS5qcGciLCJ3aWR0aCI6Ijw9MTE2NyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.0kQHhoHS13ayZ288OrYbh8geqK6LvY0XHFm5yvfXrdI",
-    title: "Dark Apocalyptic Series",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0687daa4-87a2-44ff-bcb3-a87d32d90c17/deuv4xf-69f31271-3739-4466-9c0d-ff6423946986.jpg/v1/fill/w_1193,h_670,q_70,strp/terror_mansion_by_krannart_deuv4xf-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE5IiwicGF0aCI6IlwvZlwvMDY4N2RhYTQtODdhMi00NGZmLWJjYjMtYTg3ZDMyZDkwYzE3XC9kZXV2NHhmLTY5ZjMxMjcxLTM3MzktNDQ2Ni05YzBkLWZmNjQyMzk0Njk4Ni5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.g_P5U6CT6oB951yIpnYp2PDTP8ZYb0EDlAyt21SlgPs",
+    title: "Apocalyptic Series",
     subtitle: "A Thrilling Adventure",
     button: "Read Now",
   },
 ];
 
-const ONE_SECOND = 1000;
+const ONE_SECOND = 1000000;
 const AUTO_DELAY = ONE_SECOND * 10;
 const DRAG_BUFFER = 50;
 
@@ -94,7 +94,7 @@ const SliderHero: React.FC = () => {
           {contents.map((content, i) => (
             <motion.div
               key={i}
-              className="w-full h-full flex-shrink-0 relative"
+              className="w-full h-full flex-shrink-0 relative "
               animate={{ x: `-${imgIndex * 100}%` }}
               transition={SPRING_OPTIONS}
               style={{
@@ -103,72 +103,16 @@ const SliderHero: React.FC = () => {
                 backgroundPosition: "center",
               }}
             >
-             <div className="max-h-screen lg:max-h-none">
-             {i === 0 ? (
-                <div className="lg:flex lg:h-full  justify-between lg:mr-24">
-                  <div className="max-w-lg hidden lg:block ml-10">
-                    <img
-                      src={content.image}
-                      alt={`Image ${i + 1}`}
-                      className="object-cover w-full h-full"
-                    />
+              <div className="mt-32 lg:py-0">
+                {i === 0 ? (
+                  <div>
+
                   </div>
-                  <div className=" flex justify-center items-center lg:mt-16 mt-32">
-                    <div className="text-center">
-                      <h2 className="text-white lg:text-6xl text-5xl font-bold mb-4 cinzel-decorative-regular">
-                        {content.title}
-                      </h2>
-                      <p className="text-white text-lg mb-6 cinzel-decorative-regular mx-5 lg:mx-0">
-                        {content.subtitle}
-                      </p>
-                      <a href="#about">
-                        <button className="bg-white text-black py-4 px-16 font-semibold cinzel-decorative-regular">
-                          {content.button}
-                        </button>
-                      </a>
-                    </div>
+                ) : (
+                  <div>
                   </div>
-                  <div className="lg:w-1/2 block lg:hidden  lg:mt-0">
-                    <div className="flex justify-center">
-                    <img
-                      src={content.image}
-                      alt={`Image ${i + 1}`}
-                      className="h-[400px]  object-cover"
-                    />
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <div className="relative w-full lg:flex lg:h-full justify-between items-center">
-                 
-                  {/* Dark overlay */}
-                  <div className="lg:flex lg:mx-40 items-center">
-                  <div className="relative z-20  items-center lg:mt-16 mt-32">
-                    <div className="text-center max-w-xl">
-                      <h2 className="text-white lg:text-5xl text-5xl  font-bold mb-4 cinzel-decorative-regular">
-                        {content.title}
-                      </h2>
-                      <p className="text-white text-lg mb-6 cinzel-decorative-regular mx-5 lg:mx-0">
-                        {content.subtitle}
-                      </p>
-                      <a href="#about">
-                        <button className="bg-white text-black py-4 px-16 font-semibold cinzel-decorative-regular">
-                          {content.button}
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="z-20 flex justify-center mt-10 lg:mt-0">
-                    <img
-                      src={content.image}
-                      alt={`Image ${i + 1}`}
-                      className=" h-[400px] object-cover z-32"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-             </div>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>

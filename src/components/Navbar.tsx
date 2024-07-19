@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         <ul className="hidden md:flex space-x-8 text-black text-lg font-medium">
           <li><Link to = {"/"} className=">hover:text-gray-700">Home</Link></li>
           <li><Link to={'/about'} className=">hover:text-gray-700">About</Link></li>
-          <li><Link to = {"books"} className=">hover:text-gray-700">Books</Link></li>
+          <li><Link to = {"/books"} className=">hover:text-gray-700">Books</Link></li>
           <li><Link to = {"/contact"} className=">hover:text-gray-700">Contact</Link></li>
        
         </ul>
@@ -40,8 +40,8 @@ const Navbar: React.FC = () => {
         <div className="md:hidden">
           <ul className="px-4 pb-4 space-y-4">
             <li><Link to = {"/"} className="py-2 text-gray-700 hover:text-gray-700">Home</Link></li>
-            <li><a href="#about" className=" py-2 text-gray-700 hover:text-gray-700">About</a></li>
-            <li><Link to = {"books"} className="py-2 text-gray-700 hover:text-gray-700">Books</Link></li>
+            <li><Link to="/about" className=" py-2 text-gray-700 hover:text-gray-700">About</Link></li>
+            <li><Link to = {"/books"} className="py-2 text-gray-700 hover:text-gray-700">Books</Link></li>
             <li><Link to = {"/contact"} className="py-2 text-gray-700 hover:text-gray-700">Contact</Link></li>
             <li className="flex justify-center">
               <a href="https://www.instagram.com" className="text-gray-700 hover:text-gray-900">

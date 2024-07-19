@@ -4,7 +4,6 @@ import SliderHero from "../src/components/SliderHero";
 import Hero from "../src/components/Hero";
 import AnimageSeries from "../src/components/AnimageSeries";
 import AllShifter from "../src/components/AllShifter";
-import About from "../src/components/About";
 import Testimonial from "../src/components/Testimonial";
 import PenName from "../src/components/PenName";
 import Series from "../src/components/Series";
@@ -25,7 +24,6 @@ const Home = () => {
         <Hero />
         <AnimageSeries/>
         <AllShifter/>
-        <About/>
         <PenName/>
         <Testimonial/>
         <Series/>
