@@ -43,7 +43,7 @@ const Hero: FC = () => {
           <div className="lg:space-x-6  lg:space-y-0 flex lg:flex-none space-x-2 items-center">
             <a href="#about">
               <button className="lg:px-10 px-5 py-3 rounded-3xl bg-white text-black font-semibold">
-                Meet Quatarina
+                Meet Qatarina
               </button>
             </a>
            <a href="#books"> <button className="lg:px-10 px-5 py-3 rounded-3xl bg-white text-black font-semibold">
