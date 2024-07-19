@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
         </div>
         <ul className="hidden md:flex space-x-8 text-black text-lg font-medium">
           <li><Link to = {"/"} className=">hover:text-gray-700">Home</Link></li>
-          <li><a href="#about" className=">hover:text-gray-700">About</a></li>
+          <li><Link to={'/about'} className=">hover:text-gray-700">About</Link></li>
           <li><Link to = {"books"} className=">hover:text-gray-700">Books</Link></li>
           <li><Link to = {"/contact"} className=">hover:text-gray-700">Contact</Link></li>
        
