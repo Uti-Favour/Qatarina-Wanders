@@ -5,7 +5,9 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
+
 import image1 from "/src/assets/images/Quatarina-Headshot-1-removebg.png";
+import image2 from "/src/assets/images/1-removebg-preview.png"
 import image3 from "/src/assets/images/13-removebg-preview.png";
 
 const contents = [
@@ -18,10 +20,10 @@ const contents = [
     button: "Learn More",
   },
   {
-    image: "/src/assets/images/1-removebg-preview.png",
+    image: image2,
     background:
       "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0687daa4-87a2-44ff-bcb3-a87d32d90c17/deuv4xf-69f31271-3739-4466-9c0d-ff6423946986.jpg/v1/fill/w_1193,h_670,q_70,strp/terror_mansion_by_krannart_deuv4xf-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE5IiwicGF0aCI6IlwvZlwvMDY4N2RhYTQtODdhMi00NGZmLWJjYjMtYTg3ZDMyZDkwYzE3XC9kZXV2NHhmLTY5ZjMxMjcxLTM3MzktNDQ2Ni05YzBkLWZmNjQyMzk0Njk4Ni5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.g_P5U6CT6oB951yIpnYp2PDTP8ZYb0EDlAyt21SlgPs",
-    title: "Dark Academia Fantasy",
+    title: " Academy Fantasy",
     subtitle: "An Enchanting Tale",
     button: "Read Now",
   },
@@ -101,7 +103,8 @@ const SliderHero: React.FC = () => {
                 backgroundPosition: "center",
               }}
             >
-              {i === 0 ? (
+             <div className="max-h-screen lg:max-h-0">
+             {i === 0 ? (
                 <div className="lg:flex lg:h-full  justify-between lg:mr-24">
                   <div className="max-w-lg hidden lg:block ml-10">
                     <img
@@ -126,21 +129,23 @@ const SliderHero: React.FC = () => {
                     </div>
                   </div>
                   <div className="lg:w-1/2 block lg:hidden  lg:mt-0">
+                    <div className="flex justify-center">
                     <img
                       src={content.image}
                       alt={`Image ${i + 1}`}
-                      className=""
+                      className="h-[400px]  object-cover"
                     />
+                    </div>
                   </div>
                 </div>
               ) : (
                 <div className="relative w-full lg:flex lg:h-full justify-between items-center">
-                  <div className="absolute inset-0 lg:bg-black lg:opacity-70 z-10"></div>{" "}
+                  <div className="absolute inset-0 bg-black opacity-70 z-10"></div>{" "}
                   {/* Dark overlay */}
                   <div className="lg:flex lg:mx-40 items-center">
-                  <div className="relative z-20  items-center lg:mt-16 mt-32 w-full">
+                  <div className="relative z-20  items-center lg:mt-16 mt-32">
                     <div className="text-center max-w-xl">
-                      <h2 className="text-white lg:text-5xl text-5xl font-bold mb-4 cinzel-decorative-regular">
+                      <h2 className="text-white lg:text-5xl text-5xl  font-bold mb-4 cinzel-decorative-regular">
                         {content.title}
                       </h2>
                       <p className="text-white text-lg mb-6 cinzel-decorative-regular mx-5 lg:mx-0">
@@ -153,16 +158,17 @@ const SliderHero: React.FC = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="z-20 mt-10">
+                  <div className="z-20 flex justify-center mt-10 lg:mt-0">
                     <img
                       src={content.image}
                       alt={`Image ${i + 1}`}
-                      className=""
+                      className=" h-[400px] object-cover z-32"
                     />
                   </div>
                   </div>
                 </div>
               )}
+             </div>
             </motion.div>
           ))}
         </div>
