@@ -103,7 +103,7 @@ const SliderHero: React.FC = () => {
                 backgroundPosition: "center",
               }}
             >
-             <div className="max-h-screen lg:max-h-0">
+             <div className="max-h-screen lg:max-h-none">
              {i === 0 ? (
                 <div className="lg:flex lg:h-full  justify-between lg:mr-24">
                   <div className="max-w-lg hidden lg:block ml-10">
@@ -140,7 +140,7 @@ const SliderHero: React.FC = () => {
                 </div>
               ) : (
                 <div className="relative w-full lg:flex lg:h-full justify-between items-center">
-                  <div className="absolute inset-0 bg-black opacity-70 z-10"></div>{" "}
+                 
                   {/* Dark overlay */}
                   <div className="lg:flex lg:mx-40 items-center">
                   <div className="relative z-20  items-center lg:mt-16 mt-32">
