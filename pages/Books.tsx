@@ -118,7 +118,7 @@ const Books: React.FC = () => {
                   {book.name}
                 </h2>
                 <a href={book.amazonlink}>
-                  <button className="bg-white text-sm  lg:px-4 px-2 py-2 rounded cinzel-decorative-regular mt-3">
+                  <button className="bg-white text-sm text-black  lg:px-4 px-2 py-2 rounded cinzel-decorative-regular mt-3">
                     Read More
                   </button>
                 </a>
