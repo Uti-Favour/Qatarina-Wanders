@@ -18,13 +18,16 @@ const Books: React.FC = () => {
 
       {/* --- Books --- */}
       <div>
-        <div className="flex items-center justify-center -mt-10 lg:-mt-0">
+      <div>
+      <div className="flex items-center justify-center -mt-10 lg:-mt-0">
           <div className="w-1/4 border-t border-gray-400"></div>
           <span className="mx-4 lg:text-2xl text-xl text-center tracking-wide text-white cinzel-decorative-regular">
             ANIMAGE ACADEMY SERIES
           </span>
           <div className="w-1/4 border-t border-gray-400"></div>
         </div>
+        <span className="text-white text-center flex justify-center lg:mx-80 mx-5 mt-3 text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusamus quo eos blanditiis! Adipisci voluptatem cupiditate quia deleniti repellat at.</span>
+      </div>
 
         <div className="grid lg:grid-cols-4 grid-cols-2 lg:mx-20 mx-5 lg:mt-14 mt-5 lg:gap-8 gap-6">
           {animage_booklist.map((book) => (
@@ -46,13 +49,16 @@ const Books: React.FC = () => {
       </div>
 
       <div className="mt-10 lg:mt-24">
-        <div className="flex items-center justify-center my-8">
+       <div>
+       <div className="flex items-center justify-center my-8">
           <div className="w-1/4 border-t border-gray-400"></div>
           <span className="mx-4 lg:text-2xl text-xl text-center tracking-wide text-white cinzel-decorative-regular">
             THE OWL SHIFTER CHRONICLE
           </span>
           <div className="w-1/4 border-t border-gray-400"></div>
         </div>
+        <span className="text-white text-center flex justify-center lg:mx-80 mx-5 mt-3 text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusamus quo eos blanditiis! Adipisci voluptatem cupiditate quia deleniti repellat at.</span>
+       </div>
 
         <div className="grid lg:grid-cols-4 grid-cols-2 lg:mx-20 mx-5 lg:mt-14 mt-5 lg:gap-8 gap-6">
           {all_shifter.map((book) => (
@@ -74,12 +80,15 @@ const Books: React.FC = () => {
       </div>
 
       <div className="mt-10 lg:mt-24">
+        <div>
         <div className="flex items-center justify-center my-8">
           <div className="w-1/4 border-t border-gray-400"></div>
           <span className="mx-4 lg:text-2xl text-xl text-center tracking-wide text-white cinzel-decorative-regular">
             THE EXPERIMENTAL SERIES
           </span>
           <div className="w-1/4 border-t border-gray-400"></div>
+        </div>
+        <span className="text-white text-center flex justify-center lg:mx-80 mx-5 mt-3 text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusamus quo eos blanditiis! Adipisci voluptatem cupiditate quia deleniti repellat at.</span>
         </div>
 
         <div className="grid lg:grid-cols-4 grid-cols-2 lg:mx-20 mx-5 lg:mt-14 mt-5 lg:gap-8 gap-6 ">
@@ -101,13 +110,16 @@ const Books: React.FC = () => {
         </div>
       </div>
       <div className="mt-10 lg:mt-24">
-        <div className="flex items-center justify-center my-8">
+      <div>
+      <div className="flex items-center justify-center my-8">
           <div className="w-1/4 border-t border-gray-400"></div>
           <span className="mx-4 lg:text-2xl text-xl text-center tracking-wide text-white cinzel-decorative-regular">
             MORE BOOKS BY QATARINA WANDERS
           </span>
           <div className="w-1/4 border-t border-gray-400"></div>
         </div>
+        <span className="text-white text-center flex justify-center lg:mx-80 mx-5 mt-3 text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusamus quo eos blanditiis! Adipisci voluptatem cupiditate quia deleniti repellat at.</span>
+      </div>
 
         <div className="grid lg:grid-cols-4 grid-cols-2 lg:mx-20 mx-5 lg:mt-14 mt-5 lg:gap-8 gap-6">
           {more_books.map((book) => (

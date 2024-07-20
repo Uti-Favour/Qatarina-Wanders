@@ -5,7 +5,7 @@ const NewsLetter : React.FC = () => {
   return (
     <section className='bg-white text-black rounded-tr-[40px] rounded-tl-[40px] mt-16 lg:flex justify-between items-center lg:mx-10 pt-16 lg:pt-0'>
    <div className='lg:max-w-2xl lg:space-y-8 space-y-6 lg:ml-20 ml-5'>
-    <h1 className='lg:text-5xl text-4xl cinzel-decorative-regular'>Be the first to get read to our new releases</h1>
+    <h1 className='lg:text-5xl text-3xl cinzel-decorative-regular'>Be the first to read our new releases</h1>
     <p className='text-base max-w-lg '>Find out about new books, tour dates, and giveaways first. We don’t share your info and we’ll only contact you with big news. Promise.</p>
     <div className=''>
         <form action="input" className='lg:flex lg:space-x-4'>
