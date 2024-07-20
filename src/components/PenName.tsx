@@ -9,7 +9,7 @@ const PenName: FC = () => {
             <h1 className="lg:text-7xl text-5xl cinzel-decorative-regular flex justify-center mx-5 text-center lg:text-left">
               Qatarina's Pen Names
             </h1>
-            <p className="flex justify-center mt-3 mx-8 lg:mx-0">
+            <p className="flex justify-center mt-3 mx-8 lg:mx-0 text-center">
               Writing under multiple pen names, Qatarina explores diverse genres
               and storytelling styles.
             </p>

@@ -131,7 +131,7 @@ const SliderHero: React.FC = () => {
                       </div>
                     </div>
                     <div className="lg:w-1/2 block lg:hidden lg:mt-0">
-                      <div className="flex justify-center mt-10">
+                      <div className="flex justify-center">
                         <img
                           src={content.image}
                           alt={`Image ${i + 1}`}
