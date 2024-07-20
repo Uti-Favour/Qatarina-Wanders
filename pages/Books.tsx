@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../src/components/Navbar";
-import Footer from "../src/components/Footer";
+import NewsLetter from "../src/components/NewsLetter";
 import animage_booklist from "../src/constants/booklist";
 import { all_shifter } from "../src/constants/booklist";
 import { experimental_series } from "../src/constants/booklist";
@@ -129,7 +129,7 @@ const Books: React.FC = () => {
       </div>
 
       <div className="bg-black ">
-        <Footer />
+        <NewsLetter/>
       </div>
     </section>
   );

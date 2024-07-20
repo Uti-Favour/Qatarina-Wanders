@@ -4,6 +4,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "../pages/Home";
 import Books from "../pages/Books";
 import AboutHer from "../pages/AboutHer";
+import Contact from "../pages/Contact";
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<Books />} />
         <Route path="/about" element={<AboutHer />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

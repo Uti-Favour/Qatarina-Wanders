@@ -21,7 +21,7 @@ const Testimonial: FC = () => {
             <div className="h-2 w-20 bg-white"></div>
 
             <div className="text-white">
-            <div>
+            <div className="text-yellow-500">
                     <FontAwesomeIcon icon={faStar}/>
                     <FontAwesomeIcon icon={faStar}/>
                     <FontAwesomeIcon icon={faStar}/>

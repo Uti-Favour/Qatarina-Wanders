@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../src/components/Navbar'
 import About from '../src/components/About'
-import Footer from '../src/components/Footer'
+import NewsLetter from '../src/components/NewsLetter'
 
 const AboutHer : React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const AboutHer : React.FC = () => {
       <div className='mt-16'>
       <About/>
       </div>
-      <Footer/>
+      <NewsLetter/>
     </div>
   )
 }

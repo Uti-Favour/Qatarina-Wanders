@@ -7,7 +7,8 @@ import AllShifter from "../src/components/AllShifter";
 import Testimonial from "../src/components/Testimonial";
 import PenName from "../src/components/PenName";
 import Series from "../src/components/Series";
-import Footer from "../src/components/Footer";
+import NewsLetter from "../src/components/NewsLetter";
+
 import { library} from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
@@ -27,7 +28,8 @@ const Home = () => {
         <PenName/>
         <Testimonial/>
         <Series/>
-        <Footer/>
+        <NewsLetter/>
+     
       </>
     </div>
   );
