@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons/faBook";
 // import quatarina_headshot from "/src/assets/images/Quatarina-Headshot-2.jpg";
@@ -16,14 +17,13 @@ const Hero: FC = () => {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full lg:h-[130%] h-full  object-cover"
+        className="absolute top-0 left-0 w-full lg:h-[130%] h-[110%] overflow-hidden object-cover"
       >
         <source src="https://cdn.pixabay.com/video/2022/10/11/134355-759233649_large.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
 
       {/* Overlay to darken the video */}
-      <div className="absolute top-0 left-0 w-full lg:h-[120%] h-full bg-black lg:opacity-60 opacity-20"></div>
+      <div className="absolute top-0 left-0 w-full lg:h-[120%] h-[110%] bg-black lg:opacity-60 opacity-20"></div>
 
       {/* Content */}
       <div className="relative z-10 lg:flex h-full w-full lg:justify-between items-center">
@@ -41,14 +41,14 @@ const Hero: FC = () => {
 
           {/* Buttons */}
           <div className="lg:space-x-6  lg:space-y-0 flex lg:flex-none space-x-2 items-center">
-            <a href="#about">
+            <Link to={"/about"}>
               <button className="lg:px-10 px-5 py-3 rounded-3xl bg-white text-black font-semibold">
                 Meet Qatarina
               </button>
-            </a>
-           <a href="#books"> <button className="lg:px-10 px-5 py-3 rounded-3xl bg-white text-black font-semibold">
+            </Link>
+           <Link to={"/books"}> <button className="lg:px-10 px-5 py-3 rounded-3xl bg-white text-black font-semibold">
               See My Books <FontAwesomeIcon icon={faBook} />
-            </button></a>
+            </button></Link>
           </div>
 
           <div>

@@ -82,7 +82,7 @@ const SliderHero: React.FC = () => {
   };
 
   return (
-    <div className="relative w-screen lg:h-screen overflow-hidden bg-neutral-950 mt-10 h-[110vh] ">
+    <div className="relative w-screen lg:h-screen md:h-screen overflow-hidden bg-neutral-950 mt-10 h-[110vh] ">
       <motion.div
         className="flex w-full h-full"
         style={{ x: dragX }}
