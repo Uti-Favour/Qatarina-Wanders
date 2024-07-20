@@ -7,10 +7,10 @@ const NewsLetter : React.FC = () => {
    <div className='lg:max-w-2xl lg:space-y-8 space-y-6 lg:ml-20 ml-5'>
     <h1 className='lg:text-5xl text-3xl cinzel-decorative-regular'>Be the first to read our new releases</h1>
     <p className='text-base max-w-lg '>Find out about new books, tour dates, and giveaways first. We don’t share your info and we’ll only contact you with big news. Promise.</p>
-    <div className=''>
+    <div>
         <form action="input" className='lg:flex lg:space-x-4'>
             <input type="email" placeholder='Email' className='py-4 lg:px-20 px-14 rounded-xl  border border-black  cinzel-decorative-regular'/>
-            <button className='py-4 lg:px-8 px-14 bg-black text-white rounded-lg cinzel-decorative-regular mt-5' type='submit'>SubScribe</button>
+            <button className='py-4 lg:px-8 px-20 bg-black text-white rounded-lg cinzel-decorative-regular mt-5 lg:mt-0  lg:mx-0 ' type='submit'>SubScribe</button>
         </form>
     </div>
 

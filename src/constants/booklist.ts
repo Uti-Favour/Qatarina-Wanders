@@ -158,7 +158,7 @@ export const experimental_series = [
         imagelink : expriemental_4,
         name : 'BOUNTY HUNTRESS BOOK 1',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+        amazonlink : 'https://www.amazon.com/Bounty-Huntress-Century-Streamiverse-Book-ebook/dp/B0CBT1YL32?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.U2C5xl9icai4_k6GxMCJH6iRLw3S_hLmNb4l2mi11s4oY6tvinuIwYaZ697tshLdwvJCX_t2T8bhGv5idAFnBplAEJXx0OFFn30Qcvrxf9ipTjeu8fJaGkjO1nVUfFayUOH3DnjLgejUBiqQkFuQLwOt3Zd5ruhpZaKV66kzrhqSg5h4HdrTVTONnnL8YHycZsmKS7JqvJmMeKPFMIXbc-cAmdflwCDdQk2rDk_VDZU.O4AU5XKZlUaZQByv0WuxqGcIwp0wK2Y1TSRI2dnMAIQ&dib_tag=AUTHOR'
     } ,
     {
         
@@ -177,7 +177,7 @@ export const experimental_series = [
         imagelink : expriemental_1,
         name : 'EXPERIMENTAL ACTIVATION',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+        amazonlink : 'https://www.amazon.com/Experimental-Activation-Century-Qatarina-Wanders-ebook/dp/B0BJHDZ28H?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.U2C5xl9icai4_k6GxMCJH6iRLw3S_hLmNb4l2mi11s4oY6tvinuIwYaZ697tshLdwvJCX_t2T8bhGv5idAFnBplAEJXx0OFFn30Qcvrxf9ipTjeu8fJaGkjO1nVUfFayUOH3DnjLgejUBiqQkFuQLwOt3Zd5ruhpZaKV66kzrhqSg5h4HdrTVTONnnL8YHycZsmKS7JqvJmMeKPFMIXbc-cAmdflwCDdQk2rDk_VDZU.O4AU5XKZlUaZQByv0WuxqGcIwp0wK2Y1TSRI2dnMAIQ&dib_tag=AUTHOR'
     } ,
 ]
 export const more_books = [
@@ -185,7 +185,7 @@ export const more_books = [
         imagelink : more_books1,
         name : 'The Tya Yoga Practice',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+        amazonlink : 'https://www.amazon.com/Tya-Practice-Upgraded-Operating-System-ebook/dp/B0CCX7H9P6?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.U2C5xl9icai4_k6GxMCJH6iRLw3S_hLmNb4l2mi11s4oY6tvinuIwYaZ697tshLdwvJCX_t2T8bhGv5idAFnBplAEJXx0OFFn30Qcvrxf9ipTjeu8fJaGkjO1nVUfFayUOH3DnjLgejUBiqQkFuQLwOt3Zd5ruhpZaKV66kzrhqSg5h4HdrTVTONnnL8YHycZsmKS7JqvJmMeKPFMIXbc-cAmdflwCDdQk2rDk_VDZU.O4AU5XKZlUaZQByv0WuxqGcIwp0wK2Y1TSRI2dnMAIQ&dib_tag=AUTHOR'
     } ,
     {
         
@@ -198,13 +198,13 @@ export const more_books = [
         imagelink : more_books3,
         name : 'Living An Unedited Life',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+        amazonlink : 'https://www.amazon.com/Living-Unedited-Life-Manifestation-productive/dp/195102916X/ref=zg-te-pba_d_sccl_1_4/135-8597275-0430414?pd_rd_w=R5dOc&content-id=amzn1.sym.081392b0-c07f-4fc2-8965-84d15d431f0d&pf_rd_p=081392b0-c07f-4fc2-8965-84d15d431f0d&pf_rd_r=KK1V9DVAMJ27PYMFYK09&pd_rd_wg=V7ZMR&pd_rd_r=5ca834a2-19d3-4808-844d-7bf281d05cae&pd_rd_i=195102916X&psc=1'
     } ,
     {
         imagelink : more_books4,
         name : 'Overcoming Chronicle Pain Through Yoga',
         description : ' a young adult academy urban fantasy for people who love thrilling action, magical battles and sticking together in tough times.',
-        amazonlink : 'https://www.amazon.com/gp/product/B09HN6LYVT'
+        amazonlink : 'https://www.amazon.com/Overcoming-Chronic-Pain-Through-Yoga/dp/1985676966?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.U2C5xl9icai4_k6GxMCJH6iRLw3S_hLmNb4l2mi11s4oY6tvinuIwYaZ697tshLdwvJCX_t2T8bhGv5idAFnBplAEJXx0OFFn30Qcvrxf9ipTjeu8fJaGkjO1nVUfFayUOH3DnjLgejUBiqQkFuQLwOt3Zd5ruhpZaKV66kzrhqSg5h4HdrTVTONnnL8YHycZsmKS7JqvJmMeKPFMIXbc-cAmdflwCDdQk2rDk_VDZU.O4AU5XKZlUaZQByv0WuxqGcIwp0wK2Y1TSRI2dnMAIQ&dib_tag=AUTHOR'
     } ,
 ]
 export default animage_booklist
